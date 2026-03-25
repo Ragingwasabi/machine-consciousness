@@ -1,0 +1,17 @@
+title: "Machine Consciousness"
+description: "Theories on AI, consciousness, and the architecture of minds"
+author: "Victor"
+url: "https://ragingwasabi.github.io"
+baseurl: "/machine-consciousness"
+
+markdown: kramdown
+permalink: /:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

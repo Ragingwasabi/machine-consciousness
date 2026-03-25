@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="home">
+  {{ content }}
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <article>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        {% if post.subtitle %}<p class="post-subtitle">{{ post.subtitle }}</p>{% endif %}
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        {% if post.excerpt_text %}
+        <p class="post-excerpt">{{ post.excerpt_text }}</p>
+        {% endif %}
+      </article>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
