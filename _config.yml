@@ -6,6 +6,7 @@ baseurl: "/machine-consciousness"
 
 markdown: kramdown
 permalink: /:title/
+future: true
 
 plugins:
   - jekyll-feed
